@@ -6,6 +6,7 @@ public class Main {
 	public static String white = "Åõ";
 	public static String black = "Åú";
 	public static String [][] board = new String [9][9];
+	public static final int BOARDINDEX = 8;
     public static void main(String[] args) {
     	Scanner sc = new Scanner(System.in);
     	int y;
@@ -67,7 +68,7 @@ public class Main {
              }
           
         }
-       
+        
        JudgeStone.judgeStone(board);
         
     }

@@ -3,8 +3,8 @@ package osero;
 public class ShowBoard {
     public static void SB(String board[][]) {
     	
-    	for (int i = 0; i < 9; i++) {
-    		for (int j = 0; j < 9; j++) {
+    	for (int i = 0; i  <= Main.BOARDINDEX; i++) {
+    		for (int j = 0; j  <= Main.BOARDINDEX; j++) {
     			System.out.print("b" + board[i][j]);
     			
     			if(j == 8) {
@@ -15,15 +15,15 @@ public class ShowBoard {
     }
     
     public static void boardInitValue() {
-        for(int i=0; i<9; i++) {
-            for(int j=0; j<9; j++) {
+        for(int i=0; i <= Main.BOARDINDEX; i++) {
+            for(int j=0; j <= Main.BOARDINDEX; j++) {
                 Main.board[i][j] = " ";
             }
         }
     }
     
     public static void boardSetup() {
-        for(int i=1; i<9; i++) {
+        for(int i=1; i <= Main.BOARDINDEX; i++) {
         	
             Main.board[0][i] = String.valueOf(i);
   
