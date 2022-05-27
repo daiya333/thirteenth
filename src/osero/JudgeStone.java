@@ -5,8 +5,8 @@ public class JudgeStone {
     	int Black = 0;
     	int White = 0;
     	
-    	for (int i = 1; i <= 8; i++) {
-			for (int j = 1; j <= 8; j++) {
+    	for (int i = 1; i <= Main.BOARDINDEX; i++) {
+			for (int j = 1; j <= Main.BOARDINDEX; j++) {
 		      if (board[i][j].equals(Main.black)) {
 		    	  Black++;
 		      } else if (board[i][j].equals(Main.white)) {
